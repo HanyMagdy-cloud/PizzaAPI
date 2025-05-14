@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using PizzaAPI.Data;
-using PizzaAPI.Interfaces;
+using PizzaAPI.Data.Interfaces;
+using PizzaAPI.Data.Repos;
 using PizzaAPI.JwtToken;
-using PizzaAPI.Repos;
 using System.Security.Claims;
 using System.Text;
 using System.Text.Json.Serialization;
@@ -96,11 +96,16 @@ builder.Services.AddSwaggerGen(c =>
 var app = builder.Build();
 
 // Configure the HTTP request pipeline
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+//if (app.Environment.IsDevelopment())
+//{
+//    app.UseSwagger();
+//    app.UseSwaggerUI();
+//}
+
+app.UseSwagger(); 
+app.UseSwaggerUI();
+
+
 
 app.UseHttpsRedirection();
 

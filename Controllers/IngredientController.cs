@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using PizzaAPI.DTOs;
-using PizzaAPI.Entities;
-using PizzaAPI.Interfaces;
+using PizzaAPI.Data.DTOs;
+using PizzaAPI.Data.Entities;
+using PizzaAPI.Data.Interfaces;
 
 namespace PizzaAPI.Controllers
 {

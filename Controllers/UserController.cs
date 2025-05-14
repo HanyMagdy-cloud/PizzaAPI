@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using PizzaAPI.DTOs;
-using PizzaAPI.Entities;
-using PizzaAPI.Interfaces;
+using PizzaAPI.Data.DTOs;
+using PizzaAPI.Data.Entities;
+using PizzaAPI.Data.Interfaces;
 using PizzaAPI.JwtToken;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;

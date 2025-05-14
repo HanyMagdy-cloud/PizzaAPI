@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using PizzaAPI.Entities;
+using PizzaAPI.Data.Entities;
 using System.Collections.Generic;
 
 namespace PizzaAPI.Data
